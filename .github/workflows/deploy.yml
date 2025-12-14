@@ -21,34 +21,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24  # 推荐使用 LTS 版本
-          cache: 'pnpm'
-          
+      # 第一步：设置 pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9  # 指定主要版本，避免冲突
+          version: 9
+          
+      # 第二步：设置 Node.js（需要放在 pnpm 之后）
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'  # 启用 pnpm 缓存
           
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         
-      # 关键步骤：创建 .nojekyll 文件
-      - name: Create .nojekyll file
-        run: touch ./dist/.nojekyll && echo "Disabled Jekyll for GitHub Pages" > ./dist/.nojekyll
-        
       - name: Build site
         run: pnpm build
         
-      # 可选的类型检查（不阻止部署）
-      - name: Type check (optional)
-        run: pnpm astro check 2>&1 | tee typecheck.log || echo "Type check completed with warnings"
+      # 创建 .nojekyll 文件（在构建后）
+      - name: Create .nojekyll file
+        run: |
+          mkdir -p ./dist
+          touch ./dist/.nojekyll
+          echo "Disabled Jekyll for GitHub Pages" > ./dist/.nojekyll
         
-      # 确保 .nojekyll 在 dist 目录中
-      - name: Verify .nojekyll exists
-        run: ls -la ./dist/ | grep nojekyll || echo "Creating .nojekyll..." && touch ./dist/.nojekyll
+      # 可选的类型检查
+      - name: Type check (optional)
+        run: |
+          if command -v pnpm &> /dev/null; then
+            pnpm astro check || echo "Type check completed with warnings"
+          else
+            echo "pnpm not found, skipping type check"
+          fi
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
