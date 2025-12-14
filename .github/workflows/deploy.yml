@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,23 +24,31 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 24  # 推荐使用 LTS 版本
+          cache: 'pnpm'
           
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        # with:
-        #   version: latest
+        with:
+          version: 9  # 指定主要版本，避免冲突
           
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
         
-      # 先构建，不进行严格类型检查
+      # 关键步骤：创建 .nojekyll 文件
+      - name: Create .nojekyll file
+        run: touch ./dist/.nojekyll && echo "Disabled Jekyll for GitHub Pages" > ./dist/.nojekyll
+        
       - name: Build site
         run: pnpm build
         
-      # 单独运行类型检查（可选，不阻止部署）
+      # 可选的类型检查（不阻止部署）
       - name: Type check (optional)
-        run: pnpm astro check || echo "Type check failed but continuing deployment"
+        run: pnpm astro check 2>&1 | tee typecheck.log || echo "Type check completed with warnings"
+        
+      # 确保 .nojekyll 在 dist 目录中
+      - name: Verify .nojekyll exists
+        run: ls -la ./dist/ | grep nojekyll || echo "Creating .nojekyll..." && touch ./dist/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
