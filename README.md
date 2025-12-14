@@ -11,13 +11,13 @@ A static blog template built with [Astro](https://astro.build).
 ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
 
 🌏 README in
-[**中文**](https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md) /
-[**日本語**](https://github.com/saicaca/fuwari/blob/main/docs/README.ja.md) /
-[**한국어**](https://github.com/saicaca/fuwari/blob/main/docs/README.ko.md) /
-[**Español**](https://github.com/saicaca/fuwari/blob/main/docs/README.es.md) /
-[**ไทย**](https://github.com/saicaca/fuwari/blob/main/docs/README.th.md) /
-[**Tiếng Việt**](https://github.com/saicaca/fuwari/blob/main/docs/README.vi.md) /
-[**Bahasa Indonesia**](https://github.com/saicaca/fuwari/blob/main/docs/README.id.md) (Provided by the community and may not always be up-to-date)
+[**中文**](https://github.com/liyunyi2005/blob/main/docs/README.zh-CN.md) /
+[**日本語**](https://github.com/liyunyi2005/blob/main/docs/README.ja.md) /
+[**한국어**](https://github.com/liyunyi2005/blob/main/docs/README.ko.md) /
+[**Español**](https://github.com/liyunyi2005/blob/main/docs/README.es.md) /
+[**ไทย**](https://github.com/liyunyi2005/blob/main/docs/README.th.md) /
+[**Tiếng Việt**](https://github.com/liyunyi2005/blob/main/docs/README.vi.md) /
+[**Bahasa Indonesia**](https://github.com/liyunyi2005/blob/main/docs/README.id.md) (Provided by the community and may not always be up-to-date)
 
 ## ✨ Features
 
@@ -27,14 +27,14 @@ A static blog template built with [Astro](https://astro.build).
 - [x] Customizable theme colors & banner
 - [x] Responsive design
 - [x] Search functionality with [Pagefind](https://pagefind.app/)
-- [x] [Markdown extended features](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
+- [x] [Markdown extended features](https://github.com/liyunyi2005?tab=readme-ov-file#-markdown-extended-syntax)
 - [x] Table of contents
 - [x] RSS feed
 
 ## 🚀 Getting Started
 
 1. Create your blog repository:
-    - [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
+    - [Generate a new repository](https://github.com/liyunyi2005/generate) from this template or fork this repository.
     - Or run one of the following commands:
        ```sh
        npm create fuwari@latest
@@ -90,7 +90,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## ✏️ Contributing
 
-Check out the [Contributing Guide](https://github.com/saicaca/fuwari/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
+Check out the [Contributing Guide](https://github.com/liyunyi2005/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## 📄 License
 
