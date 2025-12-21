@@ -1,94 +1,53 @@
 ---
-title: 我的第一篇博客
+title: 嵌入式系统开发中的文档工具与知识管理研究
+authors: ['Your Name']
+affiliation: 'Your University/Organization'
 published: 2024-05-01
 updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
-image: ''
-tags: [Demo, Example, Markdown, Fuwari]
-category: 'Examples'
-draft: false 
+abstract: '本文探讨在嵌入式系统开发过程中，如何有效利用Markdown文档工具进行技术知识管理与团队协作。通过分析实际应用案例，研究文档工具在提高开发效率和知识传承中的作用。'
+keywords: ['嵌入式系统', '文档工程', '知识管理', '技术文档', 'Markdown']
+doi: '10.xxxxx/xxxxx'
 ---
 
-## GitHub Repository Cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+## 摘要
+随着嵌入式系统复杂性的增加，有效的技术文档管理成为开发过程中的关键环节。本研究基于Fuwari文档工具的应用实践，分析了轻量级文档工具在嵌入式开发环境中的适用性及其对开发效率的影响。
 
-::github{repo="Fabrizz/MMM-OnSpotify"}
+## 1. 引言
 
-Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
+### 1.1 研究背景
+在嵌入式系统开发领域，技术文档的创建、维护和共享面临诸多挑战：
+- 开发周期的快速迭代需要灵活的文档支持
+- 多团队协作需要统一的文档格式标准
+- 知识传承依赖于结构化的文档体系
 
-```markdown
-::github{repo="saicaca/fuwari"}
-```
+### 1.2 研究目标
+本研究旨在探讨：
+1. 轻量级文档工具在嵌入式开发环境中的适用性
+2. 结构化文档对团队协作效率的影响
+3. 自动化文档工具在技术知识管理中的应用价值
 
-## Admonitions
+## 2. 方法论
 
-Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
+### 2.1 工具选择标准
+我们选取Fuwari作为研究对象，主要基于以下标准：
+- 支持学术论文常见的元素（如公式、图表、参考文献）
+- 与版本控制系统良好集成
+- 具备可扩展的插件体系
 
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
+### 2.2 实验设计
+研究采用案例分析方法，在三个嵌入式项目中实施结构化文档方案，对比传统文档方法在以下指标上的差异：
+- 文档创建时间
+- 知识检索效率
+- 团队协作满意度
 
-:::tip
-Optional information to help a user be more successful.
-:::
+## 3. 核心功能分析与应用
 
-:::important
-Crucial information necessary for users to succeed.
-:::
-
-:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::
-
-:::caution
-Negative potential consequences of an action.
-:::
-
-### Basic Syntax
-
-```markdown
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-```
-
-### Custom Titles
-
-The title of the admonition can be customized.
-
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
+### 3.1 代码仓库信息集成
+在嵌入式开发中，快速访问相关代码资源至关重要。Fuwari支持GitHub仓库卡片功能，可通过简洁的语法集成项目信息：
 
 ```markdown
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-```
-
-### GitHub Syntax
-
-> [!TIP]
-> [The GitHub syntax](https://github.com/orgs/community/discussions/16925) is also supported.
-
-```
-> [!NOTE]
-> The GitHub syntax is also supported.
-
-> [!TIP]
-> The GitHub syntax is also supported.
-```
-
-### Spoiler
-
-You can add spoilers to your text. The text also supports **Markdown** syntax.
-
-The content :spoiler[is hidden **ayyy**]!
-
+::github{repo="arm-software/CMSIS_5"}
+::github{repo="espressif/esp-idf"}
 ```markdown
 The content :spoiler[is hidden **ayyy**]!
 
