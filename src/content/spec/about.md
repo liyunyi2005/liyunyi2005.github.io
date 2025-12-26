@@ -1,7 +1,7 @@
 # About
 This is the demo site for [Fuwari](https://github.com/liyunyi2005).
 
-::github{repo="liyunyi2005/liyunyi2005"}
+::github{repo="liyunyi2005"}
 
 > ### Embedded resources
 > - [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
