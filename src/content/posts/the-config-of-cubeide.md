@@ -2,7 +2,7 @@
 title: STM32CubeIDE 环境配置要点
 published: 2025-12-26
 description: 记录 CubeIDE 常见配置、调试与工程规范。
-image: 'guide/cover.jpeg'
+image: 'guide/cover2.jpg'
 tags: [嵌入式, STM32, CubeIDE, 工具链]
 category: 工程实践
 draft: false
@@ -127,4 +127,5 @@ arm-none-eabi-objcopy -O ihex "${BuildArtifactFileBaseName}.elf" "${BuildArtifac
 - 优化级别影响调试
 
 这份文档可作为团队统一开发环境的基线清单。
+
 
