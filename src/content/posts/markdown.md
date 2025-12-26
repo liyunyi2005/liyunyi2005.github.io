@@ -1,175 +1,56 @@
 ---
-title: Markdown Example
-published: 2023-10-01
-description: A simple example of a Markdown blog post.
-tags: [Markdown, Blogging, Demo]
-category: Examples
+title: Ç¶ÈëÊ½Ñ§Ï°Â·¾¶¹æ»®£º´Ó»ù´¡µ½ÏîÄ¿
+published: 2025-12-26
+description: ÒÔÏîÄ¿½»¸¶Îªµ¼ÏòµÄÇ¶ÈëÊ½Ñ§Ï°Â·Ïß£¬¼æ¹ËÓ²¼ş¡¢¹Ì¼şÓë¹¤¾ßÁ´¡£
+tags: [Ç¶ÈëÊ½, Ñ§Ï°Â·¾¶, ¹æ»®]
+category: Ñ§Ï°¹æ»®
 draft: false
 ---
 
-# An h1 header
+Ïë×ßÇ¶ÈëÊ½·½Ïò£¬×îÅÂµÄÊÇ¡°Ñ§ÁËºÜ¶àµã£¬È´×ö²»³öÒ»¸öÍêÕûÏîÄ¿¡±¡£ÏÂÃæÊÇÒ»ÌõÒÔ½»¸¶ÎªÄ¿±êµÄÑ§Ï°Â·¾¶£¬¸²¸Ç»ù´¡¡¢ÏµÍ³»¯ÄÜÁ¦Óë×ÛºÏÏîÄ¿¡£
 
-Paragraphs are separated by a blank line.
+## 0. Æğ²½×¼±¸£¨1-2 ÖÜ£©
 
-2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
-look like:
+- ÓïÑÔ£ºC ÓïÑÔ¡¢Ö¸Õë¡¢Î»ÔËËã
+- »ù´¡£ºÊıµç/Ä£µç³£Ê¶¡¢³£¼ûÍâÉè
+- »·¾³£º±àÒë¡¢ÏÂÔØ¡¢µ÷ÊÔÁ÷³Ì
 
-- this one
-- that one
-- the other one
+**²ú³ö**£ºµãÁÁ LED + ´®¿Ú´òÓ¡ + ¼òµ¥´«¸ĞÆ÷¶ÁÈ¡¡£
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+## 1. Âã»ú½×¶Î£¨3-5 ÖÜ£©
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+- GPIO¡¢¶¨Ê±Æ÷¡¢ÖĞ¶Ï
+- UART/I2C/SPI ×ÜÏß
+- ÈÎÎñ²ğ·ÖÓëÄ£¿é»¯
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. â˜º
+**²ú³ö**£º»·¾³¼à²âĞ¡ÏµÍ³£¬º¬¼òµ¥±¨¾¯Âß¼­¡£
 
-## An h2 header
+## 2. RTOS ½×¶Î£¨4-6 ÖÜ£©
 
-Here's a numbered list:
+- ÈÎÎñÓëµ÷¶È
+- ÊÂ¼şÓëÏûÏ¢¶ÓÁĞ
+- Çı¶¯³éÏóÓë½Ó¿ÚÉè¼Æ
 
-1. first item
-2. second item
-3. third item
+**²ú³ö**£º¶à´«¸ĞÆ÷²É¼¯ + Êı¾İÉÏ±¨µÄÍø¹Ø¡£
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+## 3. ÏµÍ³½×¶Î£¨6-10 ÖÜ£©
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+- µÍ¹¦ºÄ²ßÂÔÓë¹¦ºÄ²âÊÔ
+- ¿É¿¿Í¨ĞÅ£¨Ğ£Ñé¡¢ÖØ´«¡¢Òì³£´¦Àí£©
+- Á¿²ú²âÊÔÓëÈÕÖ¾ÌåÏµ
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+**²ú³ö**£º¿É³¤ÆÚÔËĞĞµÄÉè±¸Ô­ĞÍ¡£
 
-```
-define foobar() {
-    print "Welcome to flavor country!";
-}
-```
+## 4. ÏîÄ¿½¨Òé
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+- **ÖÇÄÜ´©´÷**£ºµÍ¹¦ºÄ + BLE + ´«¸ĞÆ÷ÈÚºÏ
+- **»úÆ÷ÈË**£ºµç»ú¿ØÖÆ + PID + ´«¸ĞÆ÷±Õ»·
+- **Íø¹Ø**£º¶àĞ­Òé×ª·¢ + OTA Éı¼¶
 
-```python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-```
+## 5. Ñ§Ï°½Ú×à
 
-### An h3 header
+- Ã¿ÖÜ¹Ì¶¨Ò»¸öĞ¡Ä¿±ê
+- Ã¿ÔÂÍê³ÉÒ»¸ö¿ÉÑİÊ¾ÏîÄ¿
+- Ã¿½×¶ÎĞÎ³ÉÎÄµµÓë¸´ÅÌ
 
-Now a nested list:
-
-1. First, get these ingredients:
-
-    - carrots
-    - celery
-    - lentils
-
-2. Boil some water.
-
-3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size material color
-
----
-
-9 leather brown
-10 hemp canvas natural
-11 glass transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
----
-
-keyword text
-
----
-
-red Sunsets, apples, and
-other red or reddish
-things.
-
-green Leaves, grass, frogs
-and other things it's
-not easy being.
-
----
-
-A horizontal rule follows.
-
----
-
-Here's a definition list:
-
-apples
-: Good for making applesauce.
-oranges
-: Citrus!
-tomatoes
-: There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-| Line too
-| Line tree
-
-and images can be specified like so:
-
-[//]: # (![example image]&#40;./demo-banner.png "An exemplary image"&#41;)
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-$$
-\begin{equation*}
-\pi
-=3.1415926535
- \;8979323846\;2643383279\;5028841971\;6939937510\;5820974944
- \;5923078164\;0628620899\;8628034825\;3421170679\;\ldots
-\end{equation*}
-$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+ÕâÌõÂ·¾¶µÄÖØµãÊÇ¡°ÒÔÏîÄ¿ÎªÃªµã¡±£¬°ÑÖªÊ¶±ä³É¿ÉÕ¹Ê¾µÄ³É¹û¡£

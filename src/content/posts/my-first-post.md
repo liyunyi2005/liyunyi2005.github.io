@@ -1,42 +1,63 @@
 ---
-title: æˆ‘çš„ç¬¬ä¸€ç¯‡åšå®¢æ–‡ç« 
-published: 2025-12-21
-description: è¿™æ˜¯æˆ‘çš„ç¬¬ä¸€ç¯‡åšå®¢æ–‡ç« ï¼Œä»‹ç»å¦‚ä½•ç¼–å†™å’Œå‘å¸ƒåšå®¢
+title: ÖÇÄÜÊÖ±íµÄÇ¶ÈëÊ½ÏµÍ³Éè¼ÆÒªµã
+published: 2025-12-26
+description: ÒÔÊµ¼Ê¹¦ÄÜ²ð½âÖÇÄÜÊÖ±íµÄÓ²¼þÑ¡ÐÍ¡¢µÍ¹¦ºÄÉè¼ÆÓë¹Ì¼þ¼Ü¹¹¡£
 image: ''
-tags: [åšå®¢, æ•™ç¨‹]
-category: æ•™ç¨‹
-draft: false 
+tags: [Ç¶ÈëÊ½, ÖÇÄÜÊÖ±í, µÍ¹¦ºÄ]
+category: ÏîÄ¿Êµ¼ù
+draft: false
 lang: zh-CN
 ---
 
-# æˆ‘çš„ç¬¬ä¸€ç¯‡åšå®¢æ–‡ç« 
+# ÖÇÄÜÊÖ±íµÄÇ¶ÈëÊ½ÏµÍ³Éè¼ÆÒªµã
 
-æ¬¢è¿Žæ¥åˆ°æˆ‘çš„åšå®¢ï¼è¿™æ˜¯ä½¿ç”¨ Markdown ç¼–å†™çš„ç¤ºä¾‹æ–‡ç« ã€‚
+ÖÇÄÜÊÖ±íÊÇµäÐÍµÄ¡°ÐÔÄÜ¡¢¹¦ºÄ¡¢Ìå»ý¡±ÈýÕßÀ­³¶µÄ²úÆ·ÐÎÌ¬¡£ÏÂÃæ´ÓÐèÇó¡¢Ó²¼þ¡¢¹Ì¼þÓë²âÊÔËÄ¸öÎ¬¶È£¬²ð½âÒ»¸ö¿ÉÂäµØµÄ·½°¸¡£
 
-## æ–‡ç« å†…å®¹
+## 1. ÐèÇó²ð½â
 
-ä½ å¯ä»¥åœ¨è¿™é‡Œç¼–å†™ä½ çš„åšå®¢å†…å®¹ï¼Œæ”¯æŒï¼š
+- Ðøº½£ºÈÕ³£Åå´÷ 3-7 Ìì
+- Á¬½Ó£ºBLE ÓëÊÖ»úÎÈ¶¨Í¬²½
+- ´«¸Ð£ºÐÄÂÊ¡¢²½Êý¡¢Ë¯Ãß
+- ½»»¥£ºÐ¡ÆÁ + Õð¶¯ + ÉÙÁ¿°´¼ü
 
-- **ç²—ä½“æ–‡æœ¬**
-- *æ–œä½“æ–‡æœ¬*
-- `ä»£ç å—`
-- [é“¾æŽ¥](https://example.com)
-- åˆ—è¡¨é¡¹
+## 2. Ó²¼þÑ¡ÐÍ
 
-### ä»£ç ç¤ºä¾‹
+- **Ö÷¿Ø**£ºµÍ¹¦ºÄ MCU£¬Ö§³Ö BLE 5.x
+- **´«¸ÐÆ÷**£ºPPG ÐÄÂÊ + IMU ÁùÖá
+- **µçÔ´**£º³äµç¹ÜÀí IC + µçÁ¿¼Æ
+- **ÏÔÊ¾**£ºµÍ¹¦ºÄ OLED »ò AMOLED
 
-```javascript
-console.log('Hello, World!');
+Ñ¡ÐÍµÄ¹Ø¼üÊÇÊý¾ÝÊÖ²áÀïµÄ¡°ÕæÊµ¹¤×÷µçÁ÷¡±£¬¶ø²»ÊÇ·åÖµÐÔÄÜ¡£
+
+## 3. µÍ¹¦ºÄ²ßÂÔ
+
+- °´Ðè²ÉÑù£ºÐÄÂÊÓë²½Êý·ÖÊ±²É¼¯
+- ÊÂ¼þ»½ÐÑ£ºÊÖÍóÌ§Æð»½ÐÑÆÁÄ»
+- Í¨ÐÅ´°¿Ú£ºÅúÁ¿ÉÏ´«£¬¼õÉÙÁ¬½Ó´ÎÊý
+
+Ò»¸ö¿É²Ù×÷µÄÄ¿±êÊÇ½«Æ½¾ùµçÁ÷¿ØÖÆÔÚ 1-2mA Çø¼ä¡£
+
+## 4. ¹Ì¼þ¼Ü¹¹
+
+- ÈÎÎñ»®·Ö£º´«¸ÐÆ÷¡¢UI¡¢Í¨ÐÅ¡¢¹¦ºÄ¹ÜÀí
+- Êý¾Ý×ÜÏß£ºÍ³Ò»µÄ´«¸ÐÆ÷Êý¾Ý½á¹¹
+- ÈÕÖ¾µÈ¼¶£º¿ª·¢/Á¿²ú°æ±¾²îÒì»¯Êä³ö
+
+```c
+// Í³Ò»µÄÊý¾Ý½á¹¹±ãÓÚÉÏ²ãÏû·Ñ
+typedef struct {
+    uint32_t steps;
+    uint16_t hr;
+    int16_t  accel[3];
+} health_data_t;
 ```
 
-### å›¾ç‰‡
+## 5. ²âÊÔÓëÁ¿²ú
 
-å¦‚æžœéœ€è¦æ·»åŠ å›¾ç‰‡ï¼Œå¯ä»¥å°†å›¾ç‰‡æ”¾åœ¨ `src/assets/images/` ç›®å½•ä¸‹ï¼Œç„¶åŽå¼•ç”¨ï¼š
+- ¹¦ºÄÇúÏß£º³¡¾°»¯²âÊÔ£¨³£ÁÁ/´ý»ú/ÔË¶¯£©
+- BLE ¼æÈÝ£º¶à»úÐÍ¡¢ÈõÐÅºÅ»·¾³
+- ²ú²â½Å±¾£º´«¸ÐÆ÷×Ô¼ì + ³äµçÐ£Ñé
 
-```markdown
-![å›¾ç‰‡æè¿°](./image.png)
-```
+## ½áÓï
 
-## ç»“è¯­
-
-ç¥ä½ å†™ä½œæ„‰å¿«ï¼
+ÖÇÄÜÊÖ±í²»ÊÇ¡°¶Ñ¹¦ÄÜ¡±£¬¶øÊÇ¡°ÓÃ×îÉÙ×ÊÔ´Íê³É×îÎÈ¶¨µÄÌåÑé¡±¡£Èç¹ûÄÜÔÚÔçÆÚ¾Í°Ñ¹¦ºÄÓëÊý¾ÝÁ´Â·ÊáÀíÇå³þ£¬ÏîÄ¿ÍÆ½ø»áË³ºÜ¶à¡£
