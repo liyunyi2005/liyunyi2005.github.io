@@ -2,6 +2,7 @@
 title: 分拣机器人系统方案（嵌入式方向）
 published: 2025-12-26
 description: 以自动分拣为例，说明传感器、执行机构与控制策略的整体设计。
+image: 'guide/cover.jpeg'
 tags: [嵌入式, 机器人, 自动化]
 category: 项目实践
 draft: false
@@ -159,6 +160,7 @@ float calculate_path_error(uint8_t sensor_values[8]) {
     INITIALIZE -> IDLE -> PATH_FOLLOWING -> OBJECT_DETECTION
     -> PICKUP -> PLACEMENT -> ERROR_HANDLING
 ```
+
 
 
 

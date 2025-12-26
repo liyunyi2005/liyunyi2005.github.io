@@ -2,6 +2,7 @@
 title: 智能手表项目要点（嵌入式方向）
 published: 2025-12-26
 description: 从功能拆解到低功耗与固件架构，给出可落地的设计要点。
+image: 'guide/cover.jpeg'
 tags: [嵌入式, 智能手表, 低功耗]
 category: 项目实践
 draft: false
@@ -353,4 +354,5 @@ void lvgl_display_init(void) {
     lv_disp_drv_register(&disp_drv);
 }
 ```
+
 
