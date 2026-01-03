@@ -3,7 +3,6 @@ title: ROS在Linux环境下的配置与部署指南
 published: 2025-10-01
 updated: 2025-11-29
 description: ros的配置
-image: 'guide/cover.jpeg'
 tags: [嵌入式, 文档工程, 协作]
 category: 工程实践
 draft: false
@@ -415,4 +414,4 @@ cp ~/.bashrc ~/.bashrc.backup_$(date +%Y%m%d)
 - **中文社区**: [roschina.org](http://www.roschina.org/)
 - **GitHub**: [ros/rosdistro](https://github.com/ros/rosdistro)
 - **问答社区**: [answers.ros.org](https://answers.ros.org/)
-
+```
