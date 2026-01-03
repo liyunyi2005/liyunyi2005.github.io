@@ -4,7 +4,7 @@ published: 2026-01-04
 description: "详细介绍Linux系统环境配置的各个方面，从基础设置到高级配置，帮助您打造高效的工作环境"
 tags: ["Linux", "环境配置", "Shell", "开发环境"]
 category: "Linux"
-image: "/assets/images/linux-config.jpg"
+image: "/src/posts/guide/cover2.jpg"
 draft: false
 ---
 
