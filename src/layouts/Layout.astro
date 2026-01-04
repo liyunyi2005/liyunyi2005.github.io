@@ -35,6 +35,19 @@ let { title, banner, description, lang, setOGTypeArticle } = Astro.props;
 // so use Swup hooks instead to change the height immediately when a link is clicked
 const isHomePage = pathsEqual(Astro.url.pathname, url("/"));
 
+// 获取主页背景图片路径
+const getHomeBackgroundUrl = () => {
+	if (!isHomePage || !siteConfig.banner.src) return "";
+	const bannerSrc = siteConfig.banner.src;
+	// 如果以 / 开头，说明是 public 目录的图片
+	if (bannerSrc.startsWith("/")) {
+		return url(bannerSrc);
+	}
+	// 否则是 src/assets 目录的图片，使用相对路径
+	return url(`/${bannerSrc}`);
+};
+const homeBackgroundUrl = getHomeBackgroundUrl();
+
 // defines global css variables
 // why doing this in Layout instead of GlobalStyles: https://github.com/withastro/astro/issues/6728#issuecomment-1502203757
 const configHue = siteConfig.themeColor.hue;
@@ -150,6 +163,7 @@ const bannerOffset =
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
+		  style={homeBackgroundUrl ? `--home-bg-image: url('${homeBackgroundUrl}')` : ''}
 	>
 		<ConfigCarrier></ConfigCarrier>
 		<slot />
@@ -190,6 +204,28 @@ const bannerOffset =
 	}
 	.navbar-hidden {
 		@apply opacity-0 -translate-y-16
+	}
+
+	/* 主页背景样式 */
+	body.lg\:is-home {
+		background-image: var(--home-bg-image, none);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+	
+	/* 可选：添加半透明遮罩层以提高内容可读性，可根据需要调整透明度 */
+	body.lg\:is-home::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.3);
+		z-index: -1;
+		pointer-events: none;
 	}
 }
 </style>
