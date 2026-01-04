@@ -35,9 +35,9 @@ let { title, banner, description, lang, setOGTypeArticle } = Astro.props;
 // so use Swup hooks instead to change the height immediately when a link is clicked
 const isHomePage = pathsEqual(Astro.url.pathname, url("/"));
 
-// 获取主页背景图片路径
+// 获取主页背景图片路径（仅在 banner 未启用时使用）
 const getHomeBackgroundUrl = () => {
-	if (!isHomePage || !siteConfig.banner.src) return "";
+	if (!isHomePage || !siteConfig.banner.src || siteConfig.banner.enable) return "";
 	const bannerSrc = siteConfig.banner.src;
 	// 如果以 / 开头，说明是 public 目录的图片
 	if (bannerSrc.startsWith("/")) {
