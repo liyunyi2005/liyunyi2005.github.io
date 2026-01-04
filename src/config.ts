@@ -79,7 +79,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Efriend",
-			icon: "bolg.zuquanzhi.top",
+			icon: "fa6-solid:link",
 			url: "bolg.zuquanzhi.top.link",
 		},
 	],
