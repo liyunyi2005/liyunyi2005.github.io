@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "羽の博客",
-	subtitle: "记录生活，分享知识。",
+	subtitle: "believe in yourself only do what you want to do",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -49,12 +49,17 @@ export const navBarConfig: NavBarConfig = {
 			url: "https://github.com/liyunyi2005", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
+		{
+			name: "Github",
+			url: "https://github.com/zuquanzhi", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Lorem Ipsum",
+	name: "yiyunyi",
 	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 	links: [
 		{
@@ -71,6 +76,11 @@ export const profileConfig: ProfileConfig = {
 			name: "Email",
 			icon: "fa6-solid:envelope",
 			url: "mailto:230741467@qq.com",
+		},
+		{
+			name: "Efriend",
+			icon: "bolg.zuquanzhi.top",
+			url: "bolg.zuquanzhi.top.link",
 		},
 	],
 };

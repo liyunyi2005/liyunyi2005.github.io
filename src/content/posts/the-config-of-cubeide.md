@@ -2,7 +2,7 @@
 title: STM32CubeIDE 环境配置要点
 published: 2025-12-26
 description: 记录 CubeIDE 常见配置、调试与工程规范。
-image: 'guide/cover2.jpg'
+image: 'guide/5.jpg'
 tags: [嵌入式, STM32, CubeIDE, 工具链]
 category: 工程实践
 draft: false

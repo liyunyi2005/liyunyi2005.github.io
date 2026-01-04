@@ -4,7 +4,7 @@ published: 2025-10-01
 updated: 2025-11-29
 description: ros的配置
 tags: [嵌入式, 文档工程, 协作]
-image: "guide/cover2.jpg"
+image: "guide/4.jpg"
 category: 工程实践
 draft: false
 ---
