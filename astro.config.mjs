@@ -47,14 +47,7 @@ export default defineConfig({
 			updateBodyClass: false,
 			globalInstance: true,
 		}),
-		icon({
-			include: {
-				"fa6-brands": ["*"],
-				"fa6-regular": ["*"],
-				"fa6-solid": ["*"],
-				"material-symbols": ["*"],
-			},
-		}),
+		icon(),
 		expressiveCode({
 			themes: [expressiveCodeConfig.theme, expressiveCodeConfig.theme],
 			plugins: [
